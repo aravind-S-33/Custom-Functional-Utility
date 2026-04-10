@@ -13,3 +13,16 @@ declare function every<T>(predicate: (item: T, index: number, array: T[]) => boo
 declare function find<T>(arr: T[], arg1: ((item: T, index: number, array: T[]) => boolean) | keyof T, arg2?: any): T | undefined;
 
 export { every, filter, find, map, reduce, reduceRight, some };
+
+declare function pluck<T>(selector: string | string[], arr: T[]): any[];
+
+type Lens = {
+    path: string;
+};
+declare function lens(path: string): Lens;
+
+declare function view<T>(lens: Lens, obj: T): any;
+
+declare function set<T>(lens: Lens, value: any, obj: T): T;
+
+export { lens, pluck, set, view };
