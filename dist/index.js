@@ -23,10 +23,14 @@ __export(index_exports, {
   every: () => every,
   filter: () => filter,
   find: () => find,
+  lens: () => lens,
   map: () => map,
+  pluck: () => pluck,
   reduce: () => reduce,
   reduceRight: () => reduceRight,
-  some: () => some
+  set: () => set,
+  some: () => some,
+  view: () => view
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -117,27 +121,6 @@ function find(arr, arg1, arg2) {
   }
   return void 0;
 }
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  every,
-  filter,
-  find,
-  map,
-  reduce,
-  reduceRight,
-  some
-});
-
-
-// src/index.ts
-var index_exports = {};
-__export(index_exports, {
-  lens: () => lens,
-  pluck: () => pluck,
-  set: () => set,
-  view: () => view
-});
-module.exports = __toCommonJS(index_exports);
 
 // src/utils/path.ts
 function getValue(obj, path) {
@@ -203,8 +186,15 @@ function set(lens2, value, obj) {
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  every,
+  filter,
+  find,
   lens,
+  map,
   pluck,
+  reduce,
+  reduceRight,
   set,
+  some,
   view
 });

@@ -2,9 +2,10 @@
   "name": "arga-custom-lib",
   "version": "1.0.0",
   "description": "Zero dependency functional utility library",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "tsup",
     "test": "vitest",

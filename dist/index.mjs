@@ -85,15 +85,6 @@ function find(arr, arg1, arg2) {
   }
   return void 0;
 }
-export {
-  every,
-  filter,
-  find,
-  map,
-  reduce,
-  reduceRight,
-  some
-};
 
 // src/utils/path.ts
 function getValue(obj, path) {
@@ -158,8 +149,15 @@ function set(lens2, value, obj) {
   return cloneAndSet(obj, 0);
 }
 export {
+  every,
+  filter,
+  find,
   lens,
+  map,
   pluck,
+  reduce,
+  reduceRight,
   set,
+  some,
   view
 };
