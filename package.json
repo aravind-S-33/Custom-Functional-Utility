@@ -1,17 +1,23 @@
 {
   "name": "arga-custom-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero dependency functional utility library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest",
     "dev": "vitest"
   },
-  "keywords": ["functional", "typescript", "immutable"],
+  "keywords": [
+    "functional",
+    "typescript",
+    "immutable"
+  ],
   "author": "Aravind & Gautham",
   "license": "MIT",
   "devDependencies": {
